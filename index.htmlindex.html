@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Piper Demo Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piper Demo – Qualified Style</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eee;
+    }
+
+    header .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #444;
+      font-size: 16px;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 40px;
+      text-align: center;
+      background: #f7f7f7;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .cta-btn {
+      padding: 14px 28px;
+      background: #0066ff;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 60px 40px;
+    }
+
+    .feature {
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      padding: 40px;
+      text-align: center;
+      background: #f0f0f0;
+      margin-top: 60px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Piper Demo</h1>
-  <p>This is a dummy site for testing Qualified Piper.</p>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Qualified Demo</div>
+    <nav>
+      <a href="#">Product</a>
+      <a href="#">Solutions</a>
+      <a href="#">Resources</a>
+      <a href="#">Pricing</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Meet Piper — Your AI SDR</h1>
+    <p>
+      Engage visitors instantly, qualify leads automatically, and book more meetings with AI-powered conversations.
+    </p>
+    <a class="cta-btn" href="#">Get Started</a>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <h3>Real-Time Conversations</h3>
+      <p>Piper engages visitors the moment they land on your site.</p>
+    </div>
+
+    <div class="feature">
+      <h3>AI Qualification</h3>
+      <p>Automatically qualify leads using your custom rules and goals.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Instant Meeting Booking</h3>
+      <p>Piper books meetings directly on your calendar.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Qualified Demo — Built for interview testing
+  </footer>
 
   <!-- Qualified -->
   <script>
@@ -16,7 +148,9 @@
       }
     })(window,'qualified')
   </script>
+
   <script async src="https://js.qualified.com/qualified.js?token=HnfR6a8dgemgwDYM"></script>
   <!-- End Qualified -->
+
 </body>
 </html>
